@@ -30,10 +30,10 @@ Personal_Finance_Manager
 
 ## 📅 Progress
 
-- ✅ Day 1
-  - Project Setup
-  - SQLite Database
-  - User Authentication
-  - Password Hashing
+### ✅ Day 1
+- Project Setup
+- SQLite Database
+- User Authentication
+- Password Hashing
 
 More features coming soon...
