@@ -4,10 +4,10 @@ from finance import (
     view_transactions,
     search_transaction,
     update_transaction,
-    delete_transaction
+    delete_transaction,
+    balance_summary,
+    expense_report
 )
-
-
 def dashboard(user_id):
 
     while True:
@@ -20,7 +20,10 @@ def dashboard(user_id):
         print("3. Search Transaction")
         print("4. Update Transaction")
         print("5. Delete Transaction")
-        print("6. Logout")
+        print("6. Balance Summary")
+        print("7. Expense Report")
+        print("8. Logout")
+        
 
         choice = input("\nEnter your choice: ")
 
@@ -40,6 +43,12 @@ def dashboard(user_id):
             delete_transaction(user_id)
 
         elif choice == "6":
+            balance_summary(user_id)
+
+        elif choice == "7":
+            expense_report(user_id)
+
+        elif choice == "8":
             print("\n✅ Logged Out Successfully!")
             break
 
